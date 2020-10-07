@@ -1,0 +1,57 @@
+{
+
+  "products":[
+
+    {
+      "id":1,
+      "name":"IPhone x",
+      "decription":"iphone",
+      "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSH99jZActiAeL595_DA1gKY_gia3zwu5xrow&usqp=CAU",
+      "price":500
+    },
+    
+    {"id":2,
+      "name":"IPhone x1",
+      "decription":"moble",
+      "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSH99jZActiAeL595_DA1gKY_gia3zwu5xrow&usqp=CAU",
+      "price":300
+    },
+
+    {"id":3,
+      "name":"S8",
+      "decription":"mobile",
+      "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSH99jZActiAeL595_DA1gKY_gia3zwu5xrow&usqp=CAU",
+      "price":100
+    }
+
+  ],
+  "carts":[
+
+
+  ],
+
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "title": "json-server",
+      "author": "typicode"
+    }
+    
+   
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
