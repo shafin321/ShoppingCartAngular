@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+import { CartService } from 'src/app/cart.service';
 import { MessageService } from 'src/app/message.service';
 import { Product } from 'src/app/models/product';
 
@@ -11,12 +12,16 @@ export class ProductItemComponent implements OnInit {
 
   @Input() productItem: Product; // productItem is data type of Product
 
-  constructor(private _msg: MessageService) { }
+  constructor(private _msg: MessageService, private cartService:CartService) { }
 
   ngOnInit(): void {
   }
  handleAddToCart(){
-this._msg.sendMsg(this.productItem);
+  this.cartService.addProductToCart(this.productItem).subscribe(() => {
+    this._msg.sendMsg(this.productItem)
+})
+
+
 
  }
 }
